@@ -1,0 +1,44 @@
+!SESSION 2009-09-28 21:17:57.300 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_15
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY org.cojug.modular.microbrewery.order 4 0 2009-09-28 21:17:58.232
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.cojug.modular.microbrewery.billing; version="0.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:220)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:330)
+
+!ENTRY org.cojug.modular.microbrewery.billing 4 0 2009-09-28 21:17:58.233
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: groovy.lang; version="0.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:220)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:330)
+
+!ENTRY org.eclipse.osgi 4 0 2009-09-28 21:17:58.248
+!MESSAGE Bundle initial@reference:file:../bundles/org.cojug.modular.microbrewery.order_1.0.0.SNAPSHOT.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2009-09-28 21:17:58.248
+!MESSAGE Bundle initial@reference:file:../bundles/org.cojug.modular.microbrewery.billing_1.0.0.SNAPSHOT.jar/ was not resolved.

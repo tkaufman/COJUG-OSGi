@@ -1,0 +1,49 @@
+!SESSION 2009-09-17 17:44:00.729 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_15
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY org.cojug.modular.microbrewery.consumer 4 0 2009-09-17 17:44:01.542
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.cojug.modular.microbrewery.consumer.internal.ThirstyConsumer.start() of bundle org.cojug.modular.microbrewery.consumer.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:805)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:754)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:220)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:330)
+Caused by: java.lang.Exception: Cannot complete order due to lack of inventory
+	at org.cojug.modular.microbrewery.order.internal.HashBasedOrderServiceImpl.orderBeer(HashBasedOrderServiceImpl.java:31)
+	at org.cojug.modular.microbrewery.consumer.internal.ThirstyConsumer.start(ThirstyConsumer.java:19)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:782)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:773)
+	... 10 more
+Root exception:
+java.lang.Exception: Cannot complete order due to lack of inventory
+	at org.cojug.modular.microbrewery.order.internal.HashBasedOrderServiceImpl.orderBeer(HashBasedOrderServiceImpl.java:31)
+	at org.cojug.modular.microbrewery.consumer.internal.ThirstyConsumer.start(ThirstyConsumer.java:19)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:782)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:773)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:754)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:220)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:330)
+
+!ENTRY org.eclipse.osgi 4 0 2009-09-17 17:44:01.547
+!MESSAGE Bundle org.cojug.modular.microbrewery.consumer_1.0.0.SNAPSHOT [4] is not active.

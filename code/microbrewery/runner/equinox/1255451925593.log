@@ -1,0 +1,38 @@
+!SESSION 2009-10-13 12:38:45.260 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_15
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY org.eclipse.osgi 4 0 2009-10-13 12:38:46.204
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/com.springsource.slf4j.log4j_1.5.0.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: com.springsource.slf4j.log4j_1.5.0 [9]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY org.eclipse.osgi 4 0 2009-10-13 12:38:46.205
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/org.cojug.modular.microbrewery.spring-log_1.0.0.SNAPSHOT.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: org.cojug.modular.microbrewery.spring-log_1.0.0.SNAPSHOT [27]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY org.eclipse.osgi 4 0 2009-10-13 12:38:47.145
+!MESSAGE Bundle com.springsource.slf4j.log4j_1.5.0 [9] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2009-10-13 12:38:47.145
+!MESSAGE Bundle org.cojug.modular.microbrewery.spring-log_1.0.0.SNAPSHOT [27] is not active.

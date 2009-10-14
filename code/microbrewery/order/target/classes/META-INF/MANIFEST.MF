@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: org.cojug.modular.microbrewery.order;version="1.0.0.SN
+ APSHOT"
+Private-Package: org.cojug.modular.microbrewery.order.internal
+Ignore-Package: org.cojug.modular.microbrewery.order.internal
+Built-By: toddkaufman
+Tool: Bnd-0.0.255
+Bundle-Name: org.cojug.modular.microbrewery.order
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_15
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1254228831401
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Import-Package: org.cojug.modular.microbrewery.billing,org.cojug.modul
+ ar.microbrewery.fulfillment,org.cojug.modular.microbrewery.order;vers
+ ion="1.0.0.SNAPSHOT"
+Bundle-SymbolicName: org.cojug.modular.microbrewery.order
+

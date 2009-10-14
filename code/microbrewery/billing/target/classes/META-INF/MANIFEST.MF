@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: org.cojug.modular.microbrewery.billing;version="1.0.0.
+ SNAPSHOT"
+Private-Package: org.cojug.modular.microbrewery.billing.internal
+Ignore-Package: org.cojug.modular.microbrewery.billing.internal
+Built-By: toddkaufman
+Tool: Bnd-0.0.255
+Bundle-Name: org.cojug.modular.microbrewery.billing
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_15
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1254228829196
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Import-Package: groovy.lang,org.codehaus.groovy.reflection,org.codehau
+ s.groovy.runtime,org.codehaus.groovy.runtime.callsite,org.cojug.modul
+ ar.microbrewery.billing;version="1.0.0.SNAPSHOT"
+Bundle-SymbolicName: org.cojug.modular.microbrewery.billing
+

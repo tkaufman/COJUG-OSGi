@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Private-Package: org.cojug.modular.microbrewery.consumer.internal
+Ignore-Package: org.cojug.modular.microbrewery.consumer.internal
+Built-By: toddkaufman
+Tool: Bnd-0.0.255
+Bundle-Name: org.cojug.modular.microbrewery.consumer
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_15
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1254228832086
+Spring-Context: META-INF/spring/*.xml;publish-context:=false
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Import-Package: org.cojug.modular.microbrewery.order
+Bundle-SymbolicName: org.cojug.modular.microbrewery.consumer
+
